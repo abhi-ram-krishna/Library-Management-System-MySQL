@@ -63,3 +63,18 @@ CREATE TABLE ReturnStatus (<br>
 #### Output Screen Shot
 ![image](https://github.com/abhi-ram-krishna/Library-Management-System-MySQL/assets/42677472/e7a6437b-5d57-41cc-aa7b-a54757128913)
 <hr>
+
+#### -- INSERTING VALUES TO TABLES
+
+#### -- Inserting Values to Branch Table
+INSERT INTO Branch ( Branch_no, Manager_Id , Branch_address, Contact_no) VALUES<br>
+(1,101,'Systech Solutions, opposite CSI Church Road, Mananchira, Kozhikode, Kerala - 673001', '1234567890'),<br>
+(2,102,'Systech Solutions, Poojappura Main Rd, Poojapura, Thiruvananthapuram, Kerala - 695012', '3456789012'),<br>
+(3,103,'Systech Solutions, east fort junction, RC Bishop House Rd, Thrissur, Kerala - 680005', '5678901234');<br>
+select * from branch;
+#### Output Screen Shot
+![image](https://github.com/abhi-ram-krishna/Library-Management-System-MySQL/assets/42677472/2166acc6-9293-45a0-8963-1afdbfa44e80)
+
+
+
+

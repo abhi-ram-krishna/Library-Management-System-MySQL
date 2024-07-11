@@ -108,15 +108,15 @@ SELECT * FROM Customer;
 #### Output Screenshot
 ![image](https://github.com/abhi-ram-krishna/Library-Management-System-MySQL/assets/42677472/43a5d968-b019-4dcf-80f5-3e0f2289df29)
 #### -- Inserting Values to IssueStatus Table
-INSERT INTO IssueStatus ( Issue_Id, Issued_cust, Issued_book_name, Issue_date, Isbn_book) VALUES
-(10001, 1001, 'Atomic Habits', '2023-05-11', '978-1847941831'),
-(10002, 1003, 'The Da Vinci Code', '2024-01-23', '978-9012345678');
+INSERT INTO IssueStatus ( Issue_Id, Issued_cust, Issued_book_name, Issue_date, Isbn_book) VALUES<br>
+(10001, 1001, 'Atomic Habits', '2023-05-11', '978-1847941831'),<br>
+(10002, 1003, 'The Da Vinci Code', '2024-01-23', '978-9012345678');<br>
 SELECT * FROM IssueStatus;
 #### Output Screenshot
 ![image](https://github.com/abhi-ram-krishna/Library-Management-System-MySQL/assets/42677472/78c9eeff-83f3-4808-9eca-c5e540adecd9)
 #### -- Inserting Values to ReturnStatus Table
-INSERT INTO ReturnStatus ( Return_Id, Return_cust, Return_book_name, Return_date, Isbn_book2) VALUES
-(20001, 1002, 'The Da Vinci Code', '2024-05-02', '978-9012345678');
+INSERT INTO ReturnStatus ( Return_Id, Return_cust, Return_book_name, Return_date, Isbn_book2) VALUES<br>
+(20001, 1002, 'The Da Vinci Code', '2024-05-02', '978-9012345678');<br>
 SELECT * FROM ReturnStatus;
 #### Output Screenshot
 ![image](https://github.com/abhi-ram-krishna/Library-Management-System-MySQL/assets/42677472/23dcf022-d0c5-4002-aeec-15df01ee2351)

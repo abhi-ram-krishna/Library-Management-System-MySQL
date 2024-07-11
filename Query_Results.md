@@ -99,6 +99,31 @@ INSERT INTO Books ( ISBN, Book_title, Category, Rental_Price, Status, Author, Pu
 SELECT * FROM Books;
 #### Output Screenshot
 ![image](https://github.com/abhi-ram-krishna/Library-Management-System-MySQL/assets/42677472/d3c5aa89-ee66-44b0-9008-2f20a0f6bb69)
+#### -- Inserting Values to Customer Table
+INSERT INTO Customer ( Customer_Id, Customer_name, Customer_address, Reg_date) VALUES<br>
+(1001, 'VYSAKH O K', 'House No. 14, BKM Road, Pottammal, Kozhikode, Kerala - 673001', '2018-05-28'),<br>
+(1002, 'HARSHITHA', 'House No. 9, KB Road, Mankavu, Kozhikode, Kerala - 673007', '2023-01-15'),<br>
+(1001, 'KAVYA V K', 'House No. 2/11, OV Road, Chelavoor, Kozhikode, Kerala - 673571', '2000-05-28');<br>
+SELECT * FROM Customer;
+#### Output Screenshot
+![image](https://github.com/abhi-ram-krishna/Library-Management-System-MySQL/assets/42677472/43a5d968-b019-4dcf-80f5-3e0f2289df29)
+#### -- Inserting Values to IssueStatus Table
+INSERT INTO IssueStatus ( Issue_Id, Issued_cust, Issued_book_name, Issue_date, Isbn_book) VALUES
+(10001, 1001, 'Atomic Habits', '2023-05-11', '978-1847941831'),
+(10002, 1003, 'The Da Vinci Code', '2024-01-23', '978-9012345678');
+SELECT * FROM IssueStatus;
+#### Output Screenshot
+![image](https://github.com/abhi-ram-krishna/Library-Management-System-MySQL/assets/42677472/78c9eeff-83f3-4808-9eca-c5e540adecd9)
+#### -- Inserting Values to ReturnStatus Table
+INSERT INTO ReturnStatus ( Return_Id, Return_cust, Return_book_name, Return_date, Isbn_book2) VALUES
+(20001, 1002, 'The Da Vinci Code', '2024-05-02', '978-9012345678');
+SELECT * FROM ReturnStatus;
+#### Output Screenshot
+![image](https://github.com/abhi-ram-krishna/Library-Management-System-MySQL/assets/42677472/23dcf022-d0c5-4002-aeec-15df01ee2351)
+
+<hr>
+
+
 
 
 

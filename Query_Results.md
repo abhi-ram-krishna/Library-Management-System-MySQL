@@ -123,7 +123,32 @@ SELECT * FROM ReturnStatus;
 
 <hr>
 
+#### -- QUERIES
 
+-- Q1. Retrieve the book title, category, and rental price of all available books. 
+SELECT Book_title, Category, Rental_Price FROM Books WHERE Status = 'YES';
+#### Output Screenshot
+![image](https://github.com/abhi-ram-krishna/Library-Management-System-MySQL/assets/42677472/13b36421-f30f-46e7-8106-940254ecf938)
+
+#### -- Q2. List the employee names and their respective salaries in descending order of salary. 
+SELECT Emp_name, Salary FROM Employee ORDER BY Salary DESC;
+#### Output Screenshot
+![image](https://github.com/abhi-ram-krishna/Library-Management-System-MySQL/assets/42677472/15fcea31-697a-4c9a-9fce-651eab9d5aed)
+
+#### -- Q3. Retrieve the book titles and the corresponding customers who have issued those books. 
+SELECT b.Book_title, c.Customer_name FROM Books b JOIN IssueStatus i ON b.ISBN = i.Isbn_book JOIN Customer c ON i.Issued_cust = c.Customer_Id;
+#### Output Screenshot
+![image](https://github.com/abhi-ram-krishna/Library-Management-System-MySQL/assets/42677472/cef7ca4e-7cdc-4e47-9e61-d8884eb0c5ed)
+
+#### -- Q4. Display the total count of books in each category. 
+SELECT Category, COUNT(*) as 'Total Books' FROM Books GROUP BY Category;
+#### Output Screenshot
+![image](https://github.com/abhi-ram-krishna/Library-Management-System-MySQL/assets/42677472/3505849c-faed-4970-a98d-6e7870edb40e)
+
+#### -- Q5. Retrieve the employee names and their positions for the employees whose salaries are above Rs.50,000. 
+SELECT Emp_name, Position FROM Employee WHERE Salary > 50000;
+#### Output Screenshot
+![image](https://github.com/abhi-ram-krishna/Library-Management-System-MySQL/assets/42677472/bea86a15-b961-4ba1-b919-1d873d5df178)
 
 
 

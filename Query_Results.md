@@ -125,7 +125,7 @@ SELECT * FROM ReturnStatus;
 
 #### -- QUERIES
 
--- Q1. Retrieve the book title, category, and rental price of all available books. 
+#### -- Q1. Retrieve the book title, category, and rental price of all available books. 
 SELECT Book_title, Category, Rental_Price FROM Books WHERE Status = 'YES';
 #### Output Screenshot
 ![image](https://github.com/abhi-ram-krishna/Library-Management-System-MySQL/assets/42677472/13b36421-f30f-46e7-8106-940254ecf938)

@@ -46,7 +46,6 @@ For detailed query results, please see the [Query Results](Query_Results.md) fil
 ## Technologies Used
 - MySQL 8.0
 - MySQL Workbench 8.0
-fine calculation system for late returns
 
 ## Contributors
-- ABHIRAM KRISHNA A
+ABHIRAM KRISHNA A

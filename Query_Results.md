@@ -148,7 +148,52 @@ SELECT Category, COUNT(*) as 'Total Books' FROM Books GROUP BY Category;
 #### -- Q5. Retrieve the employee names and their positions for the employees whose salaries are above Rs.50,000. 
 SELECT Emp_name, Position FROM Employee WHERE Salary > 50000;
 #### Output Screenshot
-![image](https://github.com/abhi-ram-krishna/Library-Management-System-MySQL/assets/42677472/bea86a15-b961-4ba1-b919-1d873d5df178)
+![image](https://github.com/user-attachments/assets/5de9906e-1d93-4c19-af34-ba6b71334f47)
+
+#### -- Q6. List the customer names who registered before 2022-01-01 and have not issued any books yet. 
+SELECT Customer_name FROM Customer WHERE Reg_date < '2022-01-01' AND Customer_Id NOT IN (SELECT Issued_cust FROM IssueStatus);
+#### Output Screenshot
+![image](https://github.com/user-attachments/assets/7f0a6298-92f5-4a55-8cd7-ed97ca376ff0)
+
+#### -- Q7. Display the branch numbers and the total count of employees in each branch. 
+SELECT Branch_no, COUNT(*) as 'Total Employees' FROM Employee GROUP BY Branch_no;
+#### Output Screenshot
+![image](https://github.com/user-attachments/assets/65b1fed3-f9b3-4c70-8853-1a0b0596d710)
+
+#### -- Q8. Display the names of customers who have issued books in the month of June 2023.
+SELECT DISTINCT c.Customer_name FROM Customer c JOIN IssueStatus i ON c.Customer_Id = i.Issued_cust WHERE Issue_date LIKE '2023-06-%';
+#### Output Screenshot
+![image](https://github.com/user-attachments/assets/0c8caafb-7206-41b9-b2da-c3267b72370e)
+
+#### -- Q9. Retrieve book_title from book table containing 'history'. 
+SELECT Book_title FROM Books WHERE Book_title LIKE '%history%';
+#### Output Screenshot
+![image](https://github.com/user-attachments/assets/087c6321-3d21-46ce-b89b-72500b60b702)
+
+#### -- Q10.Retrieve the branch numbers along with the count of employees for branches having more than 5 employees.
+SELECT Branch_no, COUNT(*) as 'Employee Count' FROM Employee GROUP BY Branch_no HAVING COUNT(*) > 5;
+#### Output Screenshot
+![image](https://github.com/user-attachments/assets/3d8db8dc-3795-4976-9239-d54c2ce989dc)
+
+#### -- Q11. Retrieve the names of employees who manage branches and their respective branch addresses.
+SELECT e.Emp_name, b.Branch_address FROM Employee e JOIN Branch b ON e.Emp_Id = b.Manager_Id;
+#### Output Screenshot
+![image](https://github.com/user-attachments/assets/8c4c53f1-dfb9-45b4-837b-d1ff6edf91f5)
+
+#### -- Q12.  Display the names of customers who have issued books with a rental price higher than Rs. 25.
+SELECT DISTINCT c.Customer_name FROM Customer c JOIN IssueStatus i ON c.Customer_Id = i.Issued_cust JOIN Books b ON i.Isbn_book = b.ISBN WHERE b.Rental_Price > 25;
+#### Output Screenshot
+![image](https://github.com/user-attachments/assets/061eae8d-9cac-44dc-aaf1-e5daaec6b170)
+
+<hr>
+
+
+
+
+
+
+
+
 
 
 

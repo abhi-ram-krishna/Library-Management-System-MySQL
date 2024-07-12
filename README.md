@@ -20,6 +20,21 @@ The system consists of the following tables:
 3. Run the `library_management_system.sql` script to create the database and tables
 4. Run the sample data insertion queries to populate the tables
 
+## Repository Structure
+Library-Management-System-MySQL/
+│
+├── README.md
+├── library_management_system.sql
+├── Question - Library Management System.pdf
+├── Query_Results.md
+├── Query_Results.pdf
+├── Images/
+│   ├── database_schema.png
+│   ├── screenshot (1).jpg
+│   ├── screenshot (2).jpg
+│   └── ...
+
+
 ## Queries
 This project includes several queries to demonstrate the functionality of the system:
 

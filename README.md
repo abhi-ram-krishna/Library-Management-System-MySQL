@@ -32,7 +32,7 @@ Library-Management-System-MySQL/<br>
 │   ├── database_schema.png<br>
 │   ├── screenshot (1).jpg<br>
 │   ├── screenshot (2).jpg<br>
-│   └── ...<br>
+    └── ...<br>
 
 ## Queries
 This project includes several queries to demonstrate the functionality of the system:

@@ -35,4 +35,4 @@ For detailed query results, please see the [Query Results](Query_Results.md) fil
 fine calculation system for late returns
 
 ## Contributors
-- [ABHIRAM KRISHNA A]
+- ABHIRAM KRISHNA A
